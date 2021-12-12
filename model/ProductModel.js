@@ -71,4 +71,14 @@ Products.searchProductByName = function (name) {
     )
 }
 
+Products.searchProductById = function (product_id) {
+    sql.query("SELECT * FROM products WHERE product_id = ?", product_id3,
+        (err, res) => {
+            console.log("error: ", err);
+            result(err, null);
+            return;
+        }
+    )
+}
+
 module.exports = Products;
