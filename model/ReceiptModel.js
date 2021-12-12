@@ -56,3 +56,5 @@ Receipts.searchProductByReceiptId = function (user_id) {
         }
     )
 }
+
+module.exports = Receipts;

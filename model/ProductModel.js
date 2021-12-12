@@ -70,3 +70,5 @@ Products.searchProductByName = function (name) {
         }
     )
 }
+
+module.exports = Products;

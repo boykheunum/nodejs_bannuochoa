@@ -50,3 +50,5 @@ ReceiptDetails.searchProductByReceiptId = function (receiptdetail_id) {
         }
     )
 }
+
+module.exports = ReceiptDetails;

@@ -58,3 +58,5 @@ Users.searchUserById = function (user_id) {
         }
     );
 }
+
+module.exports = Users;

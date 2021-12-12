@@ -59,3 +59,5 @@ Informationshop.searchProductByShopId = function (shop_id) {
         }
     )
 }
+
+module.exports = Informationshop;

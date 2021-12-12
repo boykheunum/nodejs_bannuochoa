@@ -44,3 +44,5 @@ Categorys.updateCategory = function (category, category_id) {
         }
     );
 }
+
+module.exports = Categorys;
