@@ -16,7 +16,7 @@ Categorys.getAll = result => {
 }
 
 Categorys.addCategory = function (category) {
-    sql.query("INSERT INTO categorys VALUES (?,?)", [category.id, category.name],
+    sql.query("INSERT INTO categorys(name) VALUES (?)", [category.name],
         (err, res) => {
             console.log("error: ", err);
             result(err, null);
@@ -36,7 +36,7 @@ Categorys.deleteCategory = function (category_id) {
 }
 
 Categorys.updateCategory = function (category, category_id) {
-    sql.query("UPDATE categorys SET name= ? WHERE id_product= ?", [product.name, category_id],
+    sql.query("UPDATE categorys SET name= ? WHERE id_product= ?", [category.name, category_id],
         (err, res) => {
             console.log("error: ", err);
             result(err, null);
